@@ -64,6 +64,16 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
+            this.BtnSair = new System.Windows.Forms.Button();
+            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
+            this.configuraçõesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.marcadorDecimalToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.MnuVirgulaDecimal = new System.Windows.Forms.ToolStripMenuItem();
+            this.MnuPontoDecimal = new System.Windows.Forms.ToolStripMenuItem();
+            this.BtnLimparCampoX = new System.Windows.Forms.Button();
+            this.BtnLimparCampoY = new System.Windows.Forms.Button();
+            this.BtnApagarCaractereDireita = new System.Windows.Forms.Button();
+            this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // Btn0
@@ -75,6 +85,7 @@
             this.Btn0.TabIndex = 1;
             this.Btn0.Text = "0";
             this.Btn0.UseVisualStyleBackColor = true;
+            this.Btn0.Click += new System.EventHandler(this.Btn0_Click);
             // 
             // Btn1
             // 
@@ -85,6 +96,7 @@
             this.Btn1.TabIndex = 2;
             this.Btn1.Text = "1";
             this.Btn1.UseVisualStyleBackColor = true;
+            this.Btn1.Click += new System.EventHandler(this.Btn1_Click);
             // 
             // Btn4
             // 
@@ -95,6 +107,7 @@
             this.Btn4.TabIndex = 4;
             this.Btn4.Text = "4";
             this.Btn4.UseVisualStyleBackColor = true;
+            this.Btn4.Click += new System.EventHandler(this.Btn4_Click);
             // 
             // Btn6
             // 
@@ -105,6 +118,7 @@
             this.Btn6.TabIndex = 3;
             this.Btn6.Text = "6";
             this.Btn6.UseVisualStyleBackColor = true;
+            this.Btn6.Click += new System.EventHandler(this.Btn6_Click);
             // 
             // Btn2
             // 
@@ -115,6 +129,7 @@
             this.Btn2.TabIndex = 6;
             this.Btn2.Text = "2";
             this.Btn2.UseVisualStyleBackColor = true;
+            this.Btn2.Click += new System.EventHandler(this.Btn2_Click);
             // 
             // Btn7
             // 
@@ -125,6 +140,7 @@
             this.Btn7.TabIndex = 5;
             this.Btn7.Text = "7";
             this.Btn7.UseVisualStyleBackColor = true;
+            this.Btn7.Click += new System.EventHandler(this.Btn7_Click);
             // 
             // Btn3
             // 
@@ -146,6 +162,7 @@
             this.Btn5.TabIndex = 7;
             this.Btn5.Text = "5";
             this.Btn5.UseVisualStyleBackColor = true;
+            this.Btn5.Click += new System.EventHandler(this.Btn5_Click);
             // 
             // Btn8
             // 
@@ -156,6 +173,7 @@
             this.Btn8.TabIndex = 10;
             this.Btn8.Text = "8";
             this.Btn8.UseVisualStyleBackColor = true;
+            this.Btn8.Click += new System.EventHandler(this.Btn8_Click);
             // 
             // Btn9
             // 
@@ -166,6 +184,7 @@
             this.Btn9.TabIndex = 9;
             this.Btn9.Text = "9";
             this.Btn9.UseVisualStyleBackColor = true;
+            this.Btn9.Click += new System.EventHandler(this.Btn9_Click);
             // 
             // BtnDividir
             // 
@@ -196,6 +215,7 @@
             this.BtnEnter.TabIndex = 14;
             this.BtnEnter.Text = "ENTER";
             this.BtnEnter.UseVisualStyleBackColor = true;
+            this.BtnEnter.Click += new System.EventHandler(this.BtnEnter_Click);
             // 
             // BtnEElevX
             // 
@@ -230,7 +250,7 @@
             // BtnCosseno
             // 
             this.BtnCosseno.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnCosseno.Location = new System.Drawing.Point(527, 321);
+            this.BtnCosseno.Location = new System.Drawing.Point(533, 321);
             this.BtnCosseno.Name = "BtnCosseno";
             this.BtnCosseno.Size = new System.Drawing.Size(44, 33);
             this.BtnCosseno.TabIndex = 17;
@@ -300,7 +320,7 @@
             // BtnSeno
             // 
             this.BtnSeno.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnSeno.Location = new System.Drawing.Point(461, 322);
+            this.BtnSeno.Location = new System.Drawing.Point(471, 322);
             this.BtnSeno.Name = "BtnSeno";
             this.BtnSeno.Size = new System.Drawing.Size(44, 33);
             this.BtnSeno.TabIndex = 24;
@@ -346,6 +366,7 @@
             this.BtnDevimal.TabIndex = 28;
             this.BtnDevimal.Text = ".";
             this.BtnDevimal.UseVisualStyleBackColor = true;
+            this.BtnDevimal.Click += new System.EventHandler(this.BtnDevimal_Click);
             // 
             // BtnXElevadoY
             // 
@@ -362,14 +383,16 @@
             this.TxtCampoY.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TxtCampoY.Location = new System.Drawing.Point(595, 131);
             this.TxtCampoY.Name = "TxtCampoY";
+            this.TxtCampoY.ReadOnly = true;
             this.TxtCampoY.Size = new System.Drawing.Size(160, 24);
             this.TxtCampoY.TabIndex = 30;
             // 
             // TxtCampoX
             // 
             this.TxtCampoX.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TxtCampoX.Location = new System.Drawing.Point(595, 172);
+            this.TxtCampoX.Location = new System.Drawing.Point(595, 175);
             this.TxtCampoX.Name = "TxtCampoX";
+            this.TxtCampoX.ReadOnly = true;
             this.TxtCampoX.Size = new System.Drawing.Size(160, 24);
             this.TxtCampoX.TabIndex = 31;
             // 
@@ -378,6 +401,7 @@
             this.TxtCampoResposta.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TxtCampoResposta.Location = new System.Drawing.Point(595, 209);
             this.TxtCampoResposta.Name = "TxtCampoResposta";
+            this.TxtCampoResposta.ReadOnly = true;
             this.TxtCampoResposta.Size = new System.Drawing.Size(202, 24);
             this.TxtCampoResposta.TabIndex = 32;
             // 
@@ -411,11 +435,99 @@
             this.label3.TabIndex = 35;
             this.label3.Text = "X";
             // 
+            // BtnSair
+            // 
+            this.BtnSair.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnSair.Location = new System.Drawing.Point(1193, 785);
+            this.BtnSair.Name = "BtnSair";
+            this.BtnSair.Size = new System.Drawing.Size(104, 33);
+            this.BtnSair.TabIndex = 36;
+            this.BtnSair.Text = "Sair";
+            this.BtnSair.UseVisualStyleBackColor = true;
+            // 
+            // menuStrip1
+            // 
+            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.configuraçõesToolStripMenuItem});
+            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
+            this.menuStrip1.Name = "menuStrip1";
+            this.menuStrip1.Size = new System.Drawing.Size(1496, 24);
+            this.menuStrip1.TabIndex = 37;
+            this.menuStrip1.Text = "menuStrip1";
+            // 
+            // configuraçõesToolStripMenuItem
+            // 
+            this.configuraçõesToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.marcadorDecimalToolStripMenuItem});
+            this.configuraçõesToolStripMenuItem.Name = "configuraçõesToolStripMenuItem";
+            this.configuraçõesToolStripMenuItem.Size = new System.Drawing.Size(96, 20);
+            this.configuraçõesToolStripMenuItem.Text = "Configurações";
+            // 
+            // marcadorDecimalToolStripMenuItem
+            // 
+            this.marcadorDecimalToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.MnuVirgulaDecimal,
+            this.MnuPontoDecimal});
+            this.marcadorDecimalToolStripMenuItem.Name = "marcadorDecimalToolStripMenuItem";
+            this.marcadorDecimalToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.marcadorDecimalToolStripMenuItem.Text = "Marcador Decimal";
+            // 
+            // MnuVirgulaDecimal
+            // 
+            this.MnuVirgulaDecimal.Name = "MnuVirgulaDecimal";
+            this.MnuVirgulaDecimal.Size = new System.Drawing.Size(180, 22);
+            this.MnuVirgulaDecimal.Text = "Vírgula";
+            this.MnuVirgulaDecimal.Click += new System.EventHandler(this.MnuVirgulaDecimal_Click);
+            // 
+            // MnuPontoDecimal
+            // 
+            this.MnuPontoDecimal.Name = "MnuPontoDecimal";
+            this.MnuPontoDecimal.Size = new System.Drawing.Size(180, 22);
+            this.MnuPontoDecimal.Text = "Ponto";
+            this.MnuPontoDecimal.Click += new System.EventHandler(this.MnuPontoDecimal_Click);
+            // 
+            // BtnLimparCampoX
+            // 
+            this.BtnLimparCampoX.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnLimparCampoX.Location = new System.Drawing.Point(834, 175);
+            this.BtnLimparCampoX.Name = "BtnLimparCampoX";
+            this.BtnLimparCampoX.Size = new System.Drawing.Size(75, 24);
+            this.BtnLimparCampoX.TabIndex = 38;
+            this.BtnLimparCampoX.Text = "Limpar X";
+            this.BtnLimparCampoX.UseVisualStyleBackColor = true;
+            this.BtnLimparCampoX.Click += new System.EventHandler(this.BtnLimparCampoX_Click);
+            // 
+            // BtnLimparCampoY
+            // 
+            this.BtnLimparCampoY.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnLimparCampoY.Location = new System.Drawing.Point(847, 131);
+            this.BtnLimparCampoY.Name = "BtnLimparCampoY";
+            this.BtnLimparCampoY.Size = new System.Drawing.Size(75, 24);
+            this.BtnLimparCampoY.TabIndex = 39;
+            this.BtnLimparCampoY.Text = "Limpar Y";
+            this.BtnLimparCampoY.UseVisualStyleBackColor = true;
+            this.BtnLimparCampoY.Click += new System.EventHandler(this.BtnLimparCampoY_Click);
+            // 
+            // BtnApagarCaractereDireita
+            // 
+            this.BtnApagarCaractereDireita.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnApagarCaractereDireita.Image = ((System.Drawing.Image)(resources.GetObject("BtnApagarCaractereDireita.Image")));
+            this.BtnApagarCaractereDireita.Location = new System.Drawing.Point(780, 172);
+            this.BtnApagarCaractereDireita.Name = "BtnApagarCaractereDireita";
+            this.BtnApagarCaractereDireita.Size = new System.Drawing.Size(35, 27);
+            this.BtnApagarCaractereDireita.TabIndex = 40;
+            this.BtnApagarCaractereDireita.UseVisualStyleBackColor = true;
+            this.BtnApagarCaractereDireita.Click += new System.EventHandler(this.BtnApagarCaractereDireita_Click);
+            // 
             // FrmPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1496, 842);
+            this.Controls.Add(this.BtnApagarCaractereDireita);
+            this.Controls.Add(this.BtnLimparCampoY);
+            this.Controls.Add(this.BtnLimparCampoX);
+            this.Controls.Add(this.BtnSair);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
@@ -451,12 +563,17 @@
             this.Controls.Add(this.Btn6);
             this.Controls.Add(this.Btn1);
             this.Controls.Add(this.Btn0);
+            this.Controls.Add(this.menuStrip1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MainMenuStrip = this.menuStrip1;
             this.MaximizeBox = false;
             this.Name = "FrmPrincipal";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Calculadora Geral";
+            this.Load += new System.EventHandler(this.FrmPrincipal_Load);
+            this.menuStrip1.ResumeLayout(false);
+            this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -499,6 +616,15 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Button BtnSair;
+        private System.Windows.Forms.MenuStrip menuStrip1;
+        private System.Windows.Forms.ToolStripMenuItem configuraçõesToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem marcadorDecimalToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem MnuVirgulaDecimal;
+        private System.Windows.Forms.ToolStripMenuItem MnuPontoDecimal;
+        private System.Windows.Forms.Button BtnLimparCampoX;
+        private System.Windows.Forms.Button BtnLimparCampoY;
+        private System.Windows.Forms.Button BtnApagarCaractereDireita;
     }
 }
 
