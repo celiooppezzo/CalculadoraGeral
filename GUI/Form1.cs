@@ -86,7 +86,7 @@ namespace GUI
 
         private void MnuVirgulaDecimal_Click(object sender, EventArgs e)
         {
-            BtnDevimal.Text = ",";
+            BtnDecimal.Text = ",";
             marcadorDecimal = ",";
         }
 
@@ -112,7 +112,7 @@ namespace GUI
         private void MnuPontoDecimal_Click(object sender, EventArgs e)
         {
             marcadorDecimal = ".";
-            BtnDevimal.Text = ".";
+            BtnDecimal.Text = ".";
         }
 
         /// <summary>

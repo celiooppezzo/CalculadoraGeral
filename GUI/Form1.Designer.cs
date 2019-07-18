@@ -56,7 +56,7 @@
             this.BtnTangente = new System.Windows.Forms.Button();
             this.BtnInverterSinal = new System.Windows.Forms.Button();
             this.BtnExpoente = new System.Windows.Forms.Button();
-            this.BtnDevimal = new System.Windows.Forms.Button();
+            this.BtnDecimal = new System.Windows.Forms.Button();
             this.BtnXElevadoY = new System.Windows.Forms.Button();
             this.TxtCampoY = new System.Windows.Forms.TextBox();
             this.TxtCampoX = new System.Windows.Forms.TextBox();
@@ -357,16 +357,16 @@
             this.BtnExpoente.Text = "EEX";
             this.BtnExpoente.UseVisualStyleBackColor = true;
             // 
-            // BtnDevimal
+            // BtnDecimal
             // 
-            this.BtnDevimal.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnDevimal.Location = new System.Drawing.Point(847, 597);
-            this.BtnDevimal.Name = "BtnDevimal";
-            this.BtnDevimal.Size = new System.Drawing.Size(44, 33);
-            this.BtnDevimal.TabIndex = 28;
-            this.BtnDevimal.Text = ".";
-            this.BtnDevimal.UseVisualStyleBackColor = true;
-            this.BtnDevimal.Click += new System.EventHandler(this.BtnDevimal_Click);
+            this.BtnDecimal.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnDecimal.Location = new System.Drawing.Point(847, 597);
+            this.BtnDecimal.Name = "BtnDecimal";
+            this.BtnDecimal.Size = new System.Drawing.Size(44, 33);
+            this.BtnDecimal.TabIndex = 28;
+            this.BtnDecimal.Text = ".";
+            this.BtnDecimal.UseVisualStyleBackColor = true;
+            this.BtnDecimal.Click += new System.EventHandler(this.BtnDevimal_Click);
             // 
             // BtnXElevadoY
             // 
@@ -535,7 +535,7 @@
             this.Controls.Add(this.TxtCampoX);
             this.Controls.Add(this.TxtCampoY);
             this.Controls.Add(this.BtnXElevadoY);
-            this.Controls.Add(this.BtnDevimal);
+            this.Controls.Add(this.BtnDecimal);
             this.Controls.Add(this.BtnExpoente);
             this.Controls.Add(this.BtnInverterSinal);
             this.Controls.Add(this.BtnTangente);
@@ -608,7 +608,7 @@
         private System.Windows.Forms.Button BtnTangente;
         private System.Windows.Forms.Button BtnInverterSinal;
         private System.Windows.Forms.Button BtnExpoente;
-        private System.Windows.Forms.Button BtnDevimal;
+        private System.Windows.Forms.Button BtnDecimal;
         private System.Windows.Forms.Button BtnXElevadoY;
         private System.Windows.Forms.TextBox TxtCampoY;
         private System.Windows.Forms.TextBox TxtCampoX;
