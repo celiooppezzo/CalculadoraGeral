@@ -16,5 +16,10 @@ namespace GUI
         {
             InitializeComponent();
         }
+
+        private void Btn3_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
